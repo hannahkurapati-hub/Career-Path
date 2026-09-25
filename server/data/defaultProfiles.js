@@ -1,0 +1,164 @@
+export const defaultProfiles = [
+  {
+    id: "profile-1",
+    name: "Alex Morgan",
+    email: "alex.morgan@university.edu",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+    degree: "B.Tech in Computer Science & Engineering",
+    university: "Tech Institute of Science",
+    currentYear: "3rd Year (Semester 6)",
+    graduationYear: 2026,
+    gpa: "3.8 / 4.0 (8.9 CGPA)",
+    targetCareerId: "fullstack-developer",
+    bio: "Passionate CS junior building interactive web experiences, exploring scalable distributed backends and modern frontend systems.",
+    skills: [
+      { id: "sk-1", name: "JavaScript / TypeScript", level: "Intermediate", category: "Language" },
+      { id: "sk-2", name: "React.js", level: "Intermediate", category: "Frontend" },
+      { id: "sk-3", name: "HTML5 / Modern CSS", level: "Advanced", category: "Frontend" },
+      { id: "sk-4", name: "Git & GitHub", level: "Intermediate", category: "Tools" },
+      { id: "sk-5", name: "Node.js / Express", level: "Beginner", category: "Backend" },
+      { id: "sk-6", name: "Python", level: "Intermediate", category: "Language" },
+      { id: "sk-7", name: "Tailwind CSS", level: "Intermediate", category: "Frontend" }
+    ],
+    interests: [
+      "Full Stack Development",
+      "Cloud Computing",
+      "UI/UX Design",
+      "Open Source Software",
+      "Microservices"
+    ],
+    projects: [
+      {
+        id: "proj-1",
+        title: "DevSprint: Team Task Management App",
+        description: "Full stack task tracker featuring drag-and-drop kanban boards, real-time comment feeds, and JWT authentication.",
+        techStack: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+        githubUrl: "https://github.com/alexmorgan/dev-sprint",
+        liveUrl: "https://devsprint-demo.vercel.app",
+        impact: "Implemented responsive UI with 98% Lighthouse performance and reduced API response times by 35% via indexing."
+      },
+      {
+        id: "proj-2",
+        title: "Algorithmic Visualizer Studio",
+        description: "Interactive browser visualization for sorting algorithms (QuickSort, MergeSort) and pathfinding (Dijkstra, A*).",
+        techStack: ["JavaScript", "HTML5 Canvas", "CSS Animations"],
+        githubUrl: "https://github.com/alexmorgan/algo-visualizer",
+        liveUrl: "https://algo-visualizer-alex.netlify.app",
+        impact: "Used by 1,200+ university peers to prepare for data structures and algorithm examinations."
+      }
+    ],
+    certifications: [
+      {
+        id: "cert-1",
+        name: "Meta Front-End Developer Professional Certificate",
+        issuer: "Coursera / Meta",
+        issueDate: "November 2024",
+        credentialUrl: "https://coursera.org/verify/METAFRONTEND123"
+      },
+      {
+        id: "cert-2",
+        name: "JavaScript Algorithms & Data Structures",
+        issuer: "freeCodeCamp",
+        issueDate: "June 2024",
+        credentialUrl: "https://freecodecamp.org/certification/alexmorgan/js-algorithms"
+      }
+    ],
+    completedMilestones: ["fs-1-1", "fs-1-2", "fs-1-3", "fs-2-1"]
+  },
+  {
+    id: "profile-2",
+    name: "Sophia Chen",
+    email: "sophia.chen@polytech.edu",
+    avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+    degree: "B.S. in Data Science & Artificial Intelligence",
+    university: "National Data Institute",
+    currentYear: "2nd Year (Semester 4)",
+    graduationYear: 2027,
+    gpa: "3.9 / 4.0 (9.2 CGPA)",
+    targetCareerId: "ai-ml-engineer",
+    bio: "Math enthusiast and aspiring ML engineer diving deep into deep neural networks, transformer architectures, and RAG pipelines.",
+    skills: [
+      { id: "sk-11", name: "Python", level: "Advanced", category: "Language" },
+      { id: "sk-12", name: "Linear Algebra & Statistics", level: "Intermediate", category: "Math" },
+      { id: "sk-13", name: "Data Processing (NumPy, Pandas)", level: "Advanced", category: "Data" },
+      { id: "sk-14", name: "Machine Learning (Scikit-Learn)", level: "Intermediate", category: "Core ML" },
+      { id: "sk-15", name: "SQL (Advanced Window Functions, CTEs)", level: "Intermediate", category: "Database" },
+      { id: "sk-16", name: "Git & GitHub", level: "Intermediate", category: "Tools" }
+    ],
+    interests: [
+      "Natural Language Processing",
+      "Generative AI & LLMs",
+      "Computer Vision",
+      "Robotics",
+      "Reinforcement Learning"
+    ],
+    projects: [
+      {
+        id: "proj-11",
+        title: "Clinical Chest X-Ray Pneumonia Classifier",
+        description: "Built a transfer-learning convolutional network with PyTorch and ResNet-50 with Grad-CAM visual heatmaps.",
+        techStack: ["Python", "PyTorch", "OpenCV", "Streamlit", "Matplotlib"],
+        githubUrl: "https://github.com/sophiachen/xray-pneumonia-dl",
+        liveUrl: "https://xray-diag.streamlit.app",
+        impact: "Achieved 94.2% test sensitivity on 5,800 medical images, presented at Undergraduate Research Symposium."
+      }
+    ],
+    certifications: [
+      {
+        id: "cert-11",
+        name: "Deep Learning Specialization",
+        issuer: "DeepLearning.AI / Andrew Ng",
+        issueDate: "December 2024",
+        credentialUrl: "https://coursera.org/verify/DEEPLEARN456"
+      }
+    ],
+    completedMilestones: ["ai-1-1", "ai-1-2", "ai-2-1"]
+  },
+  {
+    id: "profile-3",
+    name: "Marcus Patel",
+    email: "marcus.p@stateuniv.edu",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+    degree: "B.Tech in Information Technology",
+    university: "State Technological University",
+    currentYear: "4th Year (Final Year)",
+    graduationYear: 2025,
+    gpa: "3.7 / 4.0 (8.5 CGPA)",
+    targetCareerId: "cloud-devops",
+    bio: "Final year student focused on cloud infrastructure automation, Kubernetes orchestration, and continuous deployment pipelines.",
+    skills: [
+      { id: "sk-21", name: "Linux Administration & Bash Scripting", level: "Advanced", category: "OS" },
+      { id: "sk-22", name: "Docker & Containerization", level: "Advanced", category: "Containers" },
+      { id: "sk-23", name: "CI/CD (GitHub Actions / GitLab CI)", level: "Intermediate", category: "Automation" },
+      { id: "sk-24", name: "Git & GitHub", level: "Advanced", category: "Tools" },
+      { id: "sk-25", name: "Python", level: "Intermediate", category: "Language" }
+    ],
+    interests: [
+      "Site Reliability Engineering (SRE)",
+      "Cloud Security",
+      "Infrastructure as Code",
+      "High Availability Architecture"
+    ],
+    projects: [
+      {
+        id: "proj-21",
+        title: "Automated Microservices Deployment Pipeline",
+        description: "Zero-downtime deployment pipeline using GitHub Actions, Docker multi-stage builds, and AWS ECS Fargate.",
+        techStack: ["Docker", "GitHub Actions", "AWS", "Bash", "Terraform"],
+        githubUrl: "https://github.com/marcuspatel/ecs-ci-cd-pipeline",
+        liveUrl: "",
+        impact: "Cut build and deployment cycle duration from 25 minutes down to 3.5 minutes with Docker layer caching."
+      }
+    ],
+    certifications: [
+      {
+        id: "cert-21",
+        name: "AWS Certified Cloud Practitioner",
+        issuer: "Amazon Web Services",
+        issueDate: "August 2024",
+        credentialUrl: "https://aws.amazon.com/verification/CLOUDPRACT999"
+      }
+    ],
+    completedMilestones: ["cd-1-1", "cd-2-1"]
+  }
+];
