@@ -1,5 +1,6 @@
 import React from 'react';
 import { X, Printer, Download, CheckCircle2, AlertTriangle, Compass, Award } from 'lucide-react';
+import { Logo } from './Logo.jsx';
 
 export function ExportModal({ 
   isOpen, 
@@ -25,7 +26,7 @@ export function ExportModal({
       <div className="modal-dialog" style={{ maxWidth: 800 }}>
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <Compass size={22} color="var(--primary-light)" />
+            <Logo size={26} />
             <span className="modal-title">Career Strategy & Roadmap Report</span>
           </div>
           <button className="modal-close-btn" onClick={onClose} id="btn-close-export-modal">

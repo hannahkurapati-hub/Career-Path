@@ -184,8 +184,8 @@ export function Dashboard({
           {/* High Priority Recommendation Box */}
           {topMissingSkill && (
             <div style={{
-              background: 'rgba(99, 102, 241, 0.08)',
-              border: '1px solid rgba(99, 102, 241, 0.3)',
+              background: 'rgba(88, 190, 239, 0.08)',
+              border: '1px solid rgba(88, 190, 239, 0.3)',
               borderRadius: 'var(--radius-md)',
               padding: 18,
               display: 'flex',
@@ -196,7 +196,7 @@ export function Dashboard({
                 width: 36,
                 height: 36,
                 borderRadius: 8,
-                background: 'rgba(99, 102, 241, 0.2)',
+                background: 'rgba(88, 190, 239, 0.2)',
                 color: 'var(--primary-light)',
                 display: 'flex',
                 alignItems: 'center',

@@ -1,0 +1,82 @@
+import React from 'react';
+
+export function Logo({ size = 36, className = '', glow = true }) {
+  return (
+    <div 
+      className={`brand-logo-container ${className}`} 
+      style={{ 
+        width: size, 
+        height: size, 
+        display: 'inline-flex', 
+        alignItems: 'center', 
+        justifyContent: 'center',
+        flexShrink: 0
+      }}
+    >
+      <svg 
+        viewBox="0 0 500 500" 
+        width="100%" 
+        height="100%" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg"
+        style={{ filter: glow ? 'drop-shadow(0 2px 8px rgba(88, 190, 239, 0.4))' : 'none' }}
+      >
+        <defs>
+          <linearGradient id="logoSky" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#7ED2F6" />
+            <stop offset="100%" stopColor="#54BDEC" />
+          </linearGradient>
+          <linearGradient id="logoLilac" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#CEB0EC" />
+            <stop offset="100%" stopColor="#B28CD7" />
+          </linearGradient>
+          <linearGradient id="logoStar" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#8CE0FA" />
+            <stop offset="100%" stopColor="#54BDEC" />
+          </linearGradient>
+        </defs>
+
+        {/* Reaching Star (Top Right) */}
+        <polygon 
+          points="360,20 376,68 426,70 387,100 401,148 360,118 319,148 333,100 294,70 344,68" 
+          fill="url(#logoStar)" 
+        />
+
+        {/* Head */}
+        <circle cx="236" cy="184" r="34" fill="url(#logoSky)" />
+
+        {/* Upper Body & Reaching Arm */}
+        <path 
+          d="M 230,230 C 275,225 320,180 370,95 C 362,130 350,175 338,208 C 305,225 260,265 305,290 C 275,268 250,250 230,230 Z" 
+          fill="url(#logoLilac)" 
+        />
+
+        {/* Dynamic Body Arch */}
+        <path 
+          d="M 100,335 C 130,260 210,240 262,260 C 290,272 312,315 285,385 C 260,450 200,480 182,482 C 195,465 262,390 232,320 C 205,260 142,280 100,335 Z" 
+          fill="url(#logoSky)" 
+        />
+
+        {/* Outer Orbital Ribbon */}
+        <path 
+          d="M 338,208 C 385,225 408,270 395,335 C 375,430 270,475 210,460 C 145,445 110,380 125,320 C 138,268 180,240 185,240 C 170,250 148,280 142,320 C 132,370 160,425 220,442 C 280,458 365,410 375,330 C 385,260 345,225 338,208 Z" 
+          fill="url(#logoLilac)" 
+        />
+
+        {/* Inner Swirl Accent */}
+        <path 
+          d="M 170,360 C 220,320 248,340 240,400 C 232,450 170,480 170,480 C 185,455 220,415 212,380 C 206,355 185,355 170,360 Z" 
+          fill="url(#logoLilac)" 
+        />
+
+        {/* Bottom Swoop Highlight */}
+        <path 
+          d="M 182,482 C 190,465 225,410 205,370 C 215,405 195,450 182,482 Z" 
+          fill="#A1E7FC" 
+        />
+      </svg>
+    </div>
+  );
+}
+
+export default Logo;

@@ -12,6 +12,8 @@ import {
   Award
 } from 'lucide-react';
 
+import { Logo } from './Logo.jsx';
+
 export function Sidebar({ 
   activeTab, 
   onSelectTab, 
@@ -44,18 +46,7 @@ export function Sidebar({
       <aside className={`sidebar ${mobileOpen ? 'open' : ''}`} id="app-sidebar">
         <div className="sidebar-header" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-            <div style={{
-              width: 32, 
-              height: 32, 
-              borderRadius: 8, 
-              background: 'linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%)', 
-              display: 'flex', 
-              alignItems: 'center', 
-              justifyContent: 'center', 
-              color: 'white'
-            }}>
-              <Compass size={18} />
-            </div>
+            <Logo size={32} />
             <div>
               <div style={{ fontWeight: 800, fontSize: 16, letterSpacing: '-0.02em' }}>CareerPath</div>
               <div style={{ fontSize: 10, color: 'var(--text-muted)', fontFamily: 'var(--font-mono)' }}>STUDENT PORTAL</div>

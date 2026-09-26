@@ -12,6 +12,8 @@ import {
   RotateCcw 
 } from 'lucide-react';
 
+import { Logo } from './Logo.jsx';
+
 export function Navbar({
   profiles,
   activeProfile,
@@ -58,9 +60,7 @@ export function Navbar({
         </button>
 
         <div className="brand-badge">
-          <div className="brand-icon-box">
-            <Compass size={22} />
-          </div>
+          <Logo size={32} />
           <span>CareerPath</span>
           <span className="brand-pill">AI ROADMAP</span>
         </div>
@@ -78,7 +78,7 @@ export function Navbar({
               width: 28, 
               height: 28, 
               borderRadius: '50%', 
-              background: 'rgba(99, 102, 241, 0.2)', 
+              background: 'rgba(88, 190, 239, 0.2)', 
               display: 'flex', 
               alignItems: 'center', 
               justifyContent: 'center',

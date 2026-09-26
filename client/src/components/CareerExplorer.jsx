@@ -115,7 +115,7 @@ export function CareerExplorer({
               className="career-card"
               style={{
                 borderColor: isActive ? 'var(--primary)' : undefined,
-                background: isActive ? 'linear-gradient(180deg, rgba(99, 102, 241, 0.12) 0%, rgba(17, 24, 39, 0.7) 100%)' : undefined
+                background: isActive ? 'linear-gradient(180deg, rgba(88, 190, 239, 0.14) 0%, rgba(16, 23, 38, 0.75) 100%)' : undefined
               }}
               id={`career-card-${c.id}`}
             >
@@ -124,7 +124,7 @@ export function CareerExplorer({
                   width: 44,
                   height: 44,
                   borderRadius: 12,
-                  background: 'rgba(99, 102, 241, 0.15)',
+                  background: 'rgba(88, 190, 239, 0.15)',
                   color: 'var(--primary-light)',
                   display: 'flex',
                   alignItems: 'center',

@@ -191,7 +191,7 @@ export function ProfileEditor({
           <button
             className={`chip-btn ${activeTab === 'new_profile' ? 'active' : ''}`}
             onClick={() => setActiveTab('new_profile')}
-            style={{ marginLeft: 'auto', background: activeTab === 'new_profile' ? 'var(--primary)' : 'rgba(99, 102, 241, 0.15)', color: 'var(--primary-light)' }}
+            style={{ marginLeft: 'auto', background: activeTab === 'new_profile' ? 'var(--primary)' : 'rgba(88, 190, 239, 0.15)', color: 'var(--primary-light)' }}
             id="tab-profile-create-new"
           >
             <UserPlus size={15} style={{ display: 'inline', marginRight: 6 }} />
