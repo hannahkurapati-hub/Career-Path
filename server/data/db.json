@@ -2,54 +2,44 @@
   {
     "id": "profile-1",
     "name": "Alex Morgan",
-    "email": "alex.morgan@university.edu",
     "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
     "degree": "B.Tech in Computer Science & Engineering",
     "university": "Tech Institute of Science",
-    "currentYear": "3rd Year (Semester 6)",
-    "graduationYear": 2026,
     "gpa": "3.8 / 4.0 (8.9 CGPA)",
     "targetCareerId": "fullstack-developer",
     "bio": "Passionate CS junior building interactive web experiences, exploring scalable distributed backends and modern frontend systems.",
     "skills": [
       {
-        "id": "sk-1",
         "name": "JavaScript / TypeScript",
         "level": "Intermediate",
         "category": "Language"
       },
       {
-        "id": "sk-2",
         "name": "React.js",
         "level": "Intermediate",
         "category": "Frontend"
       },
       {
-        "id": "sk-3",
         "name": "HTML5 / Modern CSS",
         "level": "Advanced",
         "category": "Frontend"
       },
       {
-        "id": "sk-4",
         "name": "Git & GitHub",
         "level": "Intermediate",
         "category": "Tools"
       },
       {
-        "id": "sk-5",
         "name": "Node.js / Express",
         "level": "Beginner",
         "category": "Backend"
       },
       {
-        "id": "sk-6",
         "name": "Python",
         "level": "Intermediate",
         "category": "Language"
       },
       {
-        "id": "sk-7",
         "name": "Tailwind CSS",
         "level": "Intermediate",
         "category": "Frontend"
@@ -98,14 +88,16 @@
         "name": "Meta Front-End Developer Professional Certificate",
         "issuer": "Coursera / Meta",
         "issueDate": "November 2024",
-        "credentialUrl": "https://coursera.org/verify/METAFRONTEND123"
+        "credentialUrl": "https://coursera.org/verify/METAFRONTEND123",
+        "skills": []
       },
       {
         "id": "cert-2",
         "name": "JavaScript Algorithms & Data Structures",
         "issuer": "freeCodeCamp",
         "issueDate": "June 2024",
-        "credentialUrl": "https://freecodecamp.org/certification/alexmorgan/js-algorithms"
+        "credentialUrl": "https://freecodecamp.org/certification/alexmorgan/js-algorithms",
+        "skills": []
       }
     ],
     "completedMilestones": [
@@ -118,48 +110,39 @@
   {
     "id": "profile-2",
     "name": "Sophia Chen",
-    "email": "sophia.chen@polytech.edu",
     "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
     "degree": "B.S. in Data Science & Artificial Intelligence",
     "university": "National Data Institute",
-    "currentYear": "2nd Year (Semester 4)",
-    "graduationYear": 2027,
     "gpa": "3.9 / 4.0 (9.2 CGPA)",
     "targetCareerId": "ai-ml-engineer",
     "bio": "Math enthusiast and aspiring ML engineer diving deep into deep neural networks, transformer architectures, and RAG pipelines.",
     "skills": [
       {
-        "id": "sk-11",
         "name": "Python",
         "level": "Advanced",
         "category": "Language"
       },
       {
-        "id": "sk-12",
         "name": "Linear Algebra & Statistics",
         "level": "Intermediate",
         "category": "Math"
       },
       {
-        "id": "sk-13",
         "name": "Data Processing (NumPy, Pandas)",
         "level": "Advanced",
         "category": "Data"
       },
       {
-        "id": "sk-14",
         "name": "Machine Learning (Scikit-Learn)",
         "level": "Intermediate",
         "category": "Core ML"
       },
       {
-        "id": "sk-15",
         "name": "SQL (Advanced Window Functions, CTEs)",
         "level": "Intermediate",
         "category": "Database"
       },
       {
-        "id": "sk-16",
         "name": "Git & GitHub",
         "level": "Intermediate",
         "category": "Tools"
@@ -195,7 +178,8 @@
         "name": "Deep Learning Specialization",
         "issuer": "DeepLearning.AI / Andrew Ng",
         "issueDate": "December 2024",
-        "credentialUrl": "https://coursera.org/verify/DEEPLEARN456"
+        "credentialUrl": "https://coursera.org/verify/DEEPLEARN456",
+        "skills": []
       }
     ],
     "completedMilestones": [
@@ -207,42 +191,34 @@
   {
     "id": "profile-3",
     "name": "Marcus Patel",
-    "email": "marcus.p@stateuniv.edu",
     "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
     "degree": "B.Tech in Information Technology",
     "university": "State Technological University",
-    "currentYear": "4th Year (Final Year)",
-    "graduationYear": 2025,
     "gpa": "3.7 / 4.0 (8.5 CGPA)",
     "targetCareerId": "cloud-devops",
     "bio": "Final year student focused on cloud infrastructure automation, Kubernetes orchestration, and continuous deployment pipelines.",
     "skills": [
       {
-        "id": "sk-21",
         "name": "Linux Administration & Bash Scripting",
         "level": "Advanced",
         "category": "OS"
       },
       {
-        "id": "sk-22",
         "name": "Docker & Containerization",
         "level": "Advanced",
         "category": "Containers"
       },
       {
-        "id": "sk-23",
         "name": "CI/CD (GitHub Actions / GitLab CI)",
         "level": "Intermediate",
         "category": "Automation"
       },
       {
-        "id": "sk-24",
         "name": "Git & GitHub",
         "level": "Advanced",
         "category": "Tools"
       },
       {
-        "id": "sk-25",
         "name": "Python",
         "level": "Intermediate",
         "category": "Language"
@@ -277,7 +253,8 @@
         "name": "AWS Certified Cloud Practitioner",
         "issuer": "Amazon Web Services",
         "issueDate": "August 2024",
-        "credentialUrl": "https://aws.amazon.com/verification/CLOUDPRACT999"
+        "credentialUrl": "https://aws.amazon.com/verification/CLOUDPRACT999",
+        "skills": []
       }
     ],
     "completedMilestones": [
