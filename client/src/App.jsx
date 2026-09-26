@@ -23,7 +23,7 @@ export default function App() {
   const [auditData, setAuditData] = useState(null);
   const [interviewQuestions, setInterviewQuestions] = useState([]);
   
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [activeTab, setActiveTab] = useState('home');
   const [theme, setTheme] = useState('dark');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [exportModalOpen, setExportModalOpen] = useState(false);
