@@ -1,5 +1,6 @@
 import React from 'react';
 import { 
+  Home,
   LayoutDashboard, 
   Milestone, 
   Target, 
@@ -9,7 +10,8 @@ import {
   FileCheck2, 
   X,
   TrendingUp,
-  Award
+  Award,
+  LogIn
 } from 'lucide-react';
 
 import { Logo } from './Logo.jsx';
@@ -24,6 +26,7 @@ export function Sidebar({
   onCloseMobile 
 }) {
   const navItems = [
+    { id: 'home', label: 'Landing Home', icon: Home },
     { id: 'dashboard', label: 'Dashboard Overview', icon: LayoutDashboard },
     { id: 'roadmap', label: 'Interactive Roadmap', icon: Milestone, badge: 'Live' },
     { id: 'skillgap', label: 'Skill Gap Engine', icon: Target },

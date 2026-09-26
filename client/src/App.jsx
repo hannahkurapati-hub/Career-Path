@@ -11,6 +11,8 @@ import { ProfileEditor } from './components/ProfileEditor.jsx';
 import { InterviewPrep } from './components/InterviewPrep.jsx';
 import { ResumeScorer } from './components/ResumeScorer.jsx';
 import { ExportModal } from './components/ExportModal.jsx';
+import { HomePage } from './components/HomePage.jsx';
+import { LoginPage } from './components/LoginPage.jsx';
 
 export default function App() {
   const [profiles, setProfiles] = useState([]);
@@ -314,6 +316,58 @@ export default function App() {
     );
   }
 
+  // 1. Landing Home Page View
+  if (activeTab === 'home') {
+    return (
+      <>
+        <HomePage
+          onNavigate={setActiveTab}
+          onSelectCareer={handleSelectCareer}
+          careers={careers}
+          profiles={profiles}
+          onSelectProfile={handleSelectProfile}
+          theme={theme}
+          onToggleTheme={handleToggleTheme}
+        />
+
+        {/* Floating Toast Alerts */}
+        <div className="toast-container" id="toast-alerts-container">
+          {toasts.map(t => (
+            <div key={t.id} className={`toast ${t.type}`}>
+              <span>{t.message}</span>
+            </div>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  // 2. Authentication Login / Sign Up Page View
+  if (activeTab === 'login') {
+    return (
+      <>
+        <LoginPage
+          onNavigate={setActiveTab}
+          onLoginSuccess={handleSelectProfile}
+          onCreateProfile={handleCreateProfile}
+          profiles={profiles}
+          careers={careers}
+          showToast={showToast}
+        />
+
+        {/* Floating Toast Alerts */}
+        <div className="toast-container" id="toast-alerts-container">
+          {toasts.map(t => (
+            <div key={t.id} className={`toast ${t.type}`}>
+              <span>{t.message}</span>
+            </div>
+          ))}
+        </div>
+      </>
+    );
+  }
+
+  // 3. Main Authenticated Student Guidance Cockpit
   return (
     <div className="app-container">
       {/* Sidebar Navigation */}
@@ -341,6 +395,7 @@ export default function App() {
           onOpenExport={() => setExportModalOpen(true)}
           onToggleMobileMenu={() => setMobileMenuOpen(!mobileMenuOpen)}
           onResetData={handleResetData}
+          onNavigate={setActiveTab}
         />
 
         {/* Dynamic Content View */}

@@ -1,4 +1,3 @@
-import React, { useState, useRef, useEffect } from 'react';
 import { 
   Compass, 
   ChevronDown, 
@@ -9,7 +8,9 @@ import {
   UserPlus, 
   Target, 
   Check, 
-  RotateCcw 
+  RotateCcw,
+  Home,
+  LogIn
 } from 'lucide-react';
 
 import { Logo } from './Logo.jsx';
@@ -25,7 +26,8 @@ export function Navbar({
   onToggleTheme,
   onOpenExport,
   onToggleMobileMenu,
-  onResetData
+  onResetData,
+  onNavigate
 }) {
   const [profileDropdownOpen, setProfileDropdownOpen] = useState(false);
   const [careerDropdownOpen, setCareerDropdownOpen] = useState(false);
@@ -59,7 +61,12 @@ export function Navbar({
           <Menu size={22} />
         </button>
 
-        <div className="brand-badge">
+        <div 
+          className="brand-badge" 
+          onClick={() => onNavigate && onNavigate('home')}
+          style={{ cursor: 'pointer' }}
+          title="Go to Home"
+        >
           <Logo size={32} />
           <span>CareerPath</span>
           <span className="brand-pill">AI ROADMAP</span>
@@ -164,6 +171,26 @@ export function Navbar({
                 </button>
               ))}
               <div className="dropdown-divider" />
+              <button 
+                className="dropdown-item" 
+                onClick={() => {
+                  onNavigate && onNavigate('home');
+                  setProfileDropdownOpen(false);
+                }}
+              >
+                <Home size={15} color="var(--primary-light)" />
+                <span style={{ fontSize: 12.5 }}>Landing Home Page</span>
+              </button>
+              <button 
+                className="dropdown-item" 
+                onClick={() => {
+                  onNavigate && onNavigate('login');
+                  setProfileDropdownOpen(false);
+                }}
+              >
+                <LogIn size={15} color="var(--secondary-light)" />
+                <span style={{ fontSize: 12.5 }}>Sign In / Switch Account</span>
+              </button>
               <button 
                 className="dropdown-item" 
                 onClick={() => {
