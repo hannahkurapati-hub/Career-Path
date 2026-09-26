@@ -1,9 +1,12 @@
+import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 
+import { connectDB, isMongoConnected } from './db.js';
+import { store } from './store.js';
 import careerRoutes from './routes/careerRoutes.js';
 import profileRoutes from './routes/profileRoutes.js';
 import gapAnalysisRoutes from './routes/gapAnalysisRoutes.js';
@@ -31,6 +34,7 @@ app.get('/api/health', (req, res) => {
     status: 'ok',
     platform: 'CareerPath API Server',
     version: '1.0.0',
+    mongodb: isMongoConnected() ? 'connected' : 'disconnected',
     timestamp: new Date().toISOString()
   });
 });
@@ -53,6 +57,17 @@ if (fs.existsSync(clientDistPath)) {
   });
 }
 
-app.listen(PORT, () => {
-  console.log(`🚀 CareerPath API Server running at http://localhost:${PORT}`);
-});
+// Connect to MongoDB Atlas and start server
+async function startServer() {
+  const connected = await connectDB();
+  if (connected) {
+    await store.syncWithMongoDB();
+  }
+  
+  app.listen(PORT, () => {
+    console.log(`🚀 CareerPath API Server running at http://localhost:${PORT}`);
+    console.log(`🍃 Database Status: ${isMongoConnected() ? 'MongoDB Atlas Connected' : 'Local JSON Store (fallback)'}`);
+  });
+}
+
+startServer();
